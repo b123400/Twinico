@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF4785C919FC0B1C00B1C3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */; };
+		CF4785CB19FC0B1C00B1C3C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785CA19FC0B1C00B1C3C7 /* ViewController.swift */; };
+		CF4785CD19FC0B1C00B1C3C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4785CC19FC0B1C00B1C3C7 /* Images.xcassets */; };
+		CF4785D019FC0B1C00B1C3C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4785CE19FC0B1C00B1C3C7 /* Main.storyboard */; };
+		CF4785DC19FC0B1C00B1C3C7 /* TwinicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785DB19FC0B1C00B1C3C7 /* TwinicoTests.swift */; };
+		CF4785E619FC0C7200B1C3C7 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */; };
+		CF4785E819FC0CB200B1C3C7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF4785D619FC0B1C00B1C3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4785BB19FC0B1B00B1C3C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4785C219FC0B1C00B1C3C7;
+			remoteInfo = Twinico;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF4785C319FC0B1C00B1C3C7 /* Twinico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twinico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4785C719FC0B1C00B1C3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF4785CA19FC0B1C00B1C3C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF4785CC19FC0B1C00B1C3C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF4785CF19FC0B1C00B1C3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF4785D519FC0B1C00B1C3C7 /* TwinicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwinicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4785DA19FC0B1C00B1C3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4785DB19FC0B1C00B1C3C7 /* TwinicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinicoTests.swift; sourceTree = "<group>"; };
+		CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
+		CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF4785C019FC0B1C00B1C3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4785D219FC0B1C00B1C3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF4785BA19FC0B1B00B1C3C7 = {
+			isa = PBXGroup;
+			children = (
+				CF4785C519FC0B1C00B1C3C7 /* Twinico */,
+				CF4785D819FC0B1C00B1C3C7 /* TwinicoTests */,
+				CF4785C419FC0B1C00B1C3C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4785C419FC0B1C00B1C3C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF4785C319FC0B1C00B1C3C7 /* Twinico.app */,
+				CF4785D519FC0B1C00B1C3C7 /* TwinicoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF4785C519FC0B1C00B1C3C7 /* Twinico */ = {
+			isa = PBXGroup;
+			children = (
+				CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */,
+				CF4785CA19FC0B1C00B1C3C7 /* ViewController.swift */,
+				CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */,
+				CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */,
+				CF4785CC19FC0B1C00B1C3C7 /* Images.xcassets */,
+				CF4785CE19FC0B1C00B1C3C7 /* Main.storyboard */,
+				CF4785C619FC0B1C00B1C3C7 /* Supporting Files */,
+			);
+			path = Twinico;
+			sourceTree = "<group>";
+		};
+		CF4785C619FC0B1C00B1C3C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF4785C719FC0B1C00B1C3C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF4785D819FC0B1C00B1C3C7 /* TwinicoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF4785DB19FC0B1C00B1C3C7 /* TwinicoTests.swift */,
+				CF4785D919FC0B1C00B1C3C7 /* Supporting Files */,
+			);
+			path = TwinicoTests;
+			sourceTree = "<group>";
+		};
+		CF4785D919FC0B1C00B1C3C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF4785DA19FC0B1C00B1C3C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF4785C219FC0B1C00B1C3C7 /* Twinico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4785DF19FC0B1C00B1C3C7 /* Build configuration list for PBXNativeTarget "Twinico" */;
+			buildPhases = (
+				CF4785BF19FC0B1C00B1C3C7 /* Sources */,
+				CF4785C019FC0B1C00B1C3C7 /* Frameworks */,
+				CF4785C119FC0B1C00B1C3C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twinico;
+			productName = Twinico;
+			productReference = CF4785C319FC0B1C00B1C3C7 /* Twinico.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF4785D419FC0B1C00B1C3C7 /* TwinicoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4785E219FC0B1C00B1C3C7 /* Build configuration list for PBXNativeTarget "TwinicoTests" */;
+			buildPhases = (
+				CF4785D119FC0B1C00B1C3C7 /* Sources */,
+				CF4785D219FC0B1C00B1C3C7 /* Frameworks */,
+				CF4785D319FC0B1C00B1C3C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF4785D719FC0B1C00B1C3C7 /* PBXTargetDependency */,
+			);
+			name = TwinicoTests;
+			productName = TwinicoTests;
+			productReference = CF4785D519FC0B1C00B1C3C7 /* TwinicoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF4785BB19FC0B1B00B1C3C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = b123400;
+				TargetAttributes = {
+					CF4785C219FC0B1C00B1C3C7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CF4785D419FC0B1C00B1C3C7 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CF4785C219FC0B1C00B1C3C7;
+					};
+				};
+			};
+			buildConfigurationList = CF4785BE19FC0B1B00B1C3C7 /* Build configuration list for PBXProject "Twinico" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF4785BA19FC0B1B00B1C3C7;
+			productRefGroup = CF4785C419FC0B1C00B1C3C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF4785C219FC0B1C00B1C3C7 /* Twinico */,
+				CF4785D419FC0B1C00B1C3C7 /* TwinicoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF4785C119FC0B1C00B1C3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4785CD19FC0B1C00B1C3C7 /* Images.xcassets in Resources */,
+				CF4785D019FC0B1C00B1C3C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4785D319FC0B1C00B1C3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF4785BF19FC0B1C00B1C3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4785E619FC0C7200B1C3C7 /* PreferenceWindowController.swift in Sources */,
+				CF4785CB19FC0B1C00B1C3C7 /* ViewController.swift in Sources */,
+				CF4785E819FC0CB200B1C3C7 /* AccountViewController.swift in Sources */,
+				CF4785C919FC0B1C00B1C3C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4785D119FC0B1C00B1C3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4785DC19FC0B1C00B1C3C7 /* TwinicoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF4785D719FC0B1C00B1C3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4785C219FC0B1C00B1C3C7 /* Twinico */;
+			targetProxy = CF4785D619FC0B1C00B1C3C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF4785CE19FC0B1C00B1C3C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4785CF19FC0B1C00B1C3C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF4785DD19FC0B1C00B1C3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF4785DE19FC0B1C00B1C3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF4785E019FC0B1C00B1C3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Twinico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF4785E119FC0B1C00B1C3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Twinico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF4785E319FC0B1C00B1C3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TwinicoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twinico.app/Contents/MacOS/Twinico";
+			};
+			name = Debug;
+		};
+		CF4785E419FC0B1C00B1C3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TwinicoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twinico.app/Contents/MacOS/Twinico";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF4785BE19FC0B1B00B1C3C7 /* Build configuration list for PBXProject "Twinico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4785DD19FC0B1C00B1C3C7 /* Debug */,
+				CF4785DE19FC0B1C00B1C3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4785DF19FC0B1C00B1C3C7 /* Build configuration list for PBXNativeTarget "Twinico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4785E019FC0B1C00B1C3C7 /* Debug */,
+				CF4785E119FC0B1C00B1C3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF4785E219FC0B1C00B1C3C7 /* Build configuration list for PBXNativeTarget "TwinicoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4785E319FC0B1C00B1C3C7 /* Debug */,
+				CF4785E419FC0B1C00B1C3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF4785BB19FC0B1B00B1C3C7 /* Project object */;
+}
