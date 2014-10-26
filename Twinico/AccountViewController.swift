@@ -19,6 +19,17 @@ class AccountViewController: NSViewController, NSTableViewDataSource, NSTableVie
     let accountStore = ACAccountStore()
     var accountType:ACAccountType?
     
+    class func canStartStream() -> Bool {
+        let accountStore = ACAccountStore()
+        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+        
+        if !accountType.accessGranted {
+            return false
+        }
+        let allAccounts = accountStore.accountsWithAccountType(accountType)
+        return allAccounts.count > 0
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
@@ -49,6 +60,8 @@ class AccountViewController: NSViewController, NSTableViewDataSource, NSTableVie
         }
     }
     
+    // MARK: Interaction
+    
     @IBAction func authorizeButtonClicked(sender: AnyObject) {
         
         accountStore.requestAccessToAccountsWithType(accountType!, options: nil) {
@@ -71,6 +84,8 @@ class AccountViewController: NSViewController, NSTableViewDataSource, NSTableVie
             })
         }
     }
+    
+    // MARK: - Table view
     
     func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
         if !accountType!.accessGranted {
