@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1ED43619FCED280049967E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ED43419FCED280049967E /* AccountViewController.swift */; };
+		CF1ED43719FCED280049967E /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1ED43519FCED280049967E /* AccountViewController.xib */; };
 		CF4785C919FC0B1C00B1C3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */; };
 		CF4785CB19FC0B1C00B1C3C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785CA19FC0B1C00B1C3C7 /* ViewController.swift */; };
 		CF4785CD19FC0B1C00B1C3C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4785CC19FC0B1C00B1C3C7 /* Images.xcassets */; };
 		CF4785D019FC0B1C00B1C3C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4785CE19FC0B1C00B1C3C7 /* Main.storyboard */; };
 		CF4785DC19FC0B1C00B1C3C7 /* TwinicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785DB19FC0B1C00B1C3C7 /* TwinicoTests.swift */; };
-		CF4785E619FC0C7200B1C3C7 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */; };
-		CF4785E819FC0CB200B1C3C7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */; };
+		CF5B4E3B19FD1C830000C985 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B4E3A19FD1C830000C985 /* PreferenceWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF1ED43419FCED280049967E /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CF1ED43519FCED280049967E /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		CF4785C319FC0B1C00B1C3C7 /* Twinico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twinico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4785C719FC0B1C00B1C3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +39,7 @@
 		CF4785D519FC0B1C00B1C3C7 /* TwinicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwinicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4785DA19FC0B1C00B1C3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF4785DB19FC0B1C00B1C3C7 /* TwinicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinicoTests.swift; sourceTree = "<group>"; };
-		CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
-		CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CF5B4E3A19FD1C830000C985 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +83,9 @@
 			children = (
 				CF4785C819FC0B1C00B1C3C7 /* AppDelegate.swift */,
 				CF4785CA19FC0B1C00B1C3C7 /* ViewController.swift */,
-				CF4785E519FC0C7200B1C3C7 /* PreferenceWindowController.swift */,
-				CF4785E719FC0CB200B1C3C7 /* AccountViewController.swift */,
+				CF5B4E3A19FD1C830000C985 /* PreferenceWindowController.swift */,
+				CF1ED43419FCED280049967E /* AccountViewController.swift */,
+				CF1ED43519FCED280049967E /* AccountViewController.xib */,
 				CF4785CC19FC0B1C00B1C3C7 /* Images.xcassets */,
 				CF4785CE19FC0B1C00B1C3C7 /* Main.storyboard */,
 				CF4785C619FC0B1C00B1C3C7 /* Supporting Files */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4785CD19FC0B1C00B1C3C7 /* Images.xcassets in Resources */,
+				CF1ED43719FCED280049967E /* AccountViewController.xib in Resources */,
 				CF4785D019FC0B1C00B1C3C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,9 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4785E619FC0C7200B1C3C7 /* PreferenceWindowController.swift in Sources */,
+				CF5B4E3B19FD1C830000C985 /* PreferenceWindowController.swift in Sources */,
+				CF1ED43619FCED280049967E /* AccountViewController.swift in Sources */,
 				CF4785CB19FC0B1C00B1C3C7 /* ViewController.swift in Sources */,
-				CF4785E819FC0CB200B1C3C7 /* AccountViewController.swift in Sources */,
 				CF4785C919FC0B1C00B1C3C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				CF4785E119FC0B1C00B1C3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF4785E219FC0B1C00B1C3C7 /* Build configuration list for PBXNativeTarget "TwinicoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				CF4785E419FC0B1C00B1C3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,7 +21,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="r" id="BOF-NM-1cW">
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
                                                 <action selector="preferenceClicked:" target="Voe-Tx-rLC" id="cOq-I5-AWb"/>
                                                 <segue destination="xLF-Wj-9x2" kind="show" id="DQi-1D-ncB"/>
@@ -674,9 +674,9 @@
             <objects>
                 <windowController showSeguePresentationStyle="single" id="xLF-Wj-9x2" customClass="PreferenceWindowController" customModule="Twinico" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="J4H-po-pOv">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="479" height="426"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
                         <toolbar key="toolbar" implicitIdentifier="D7326A19-1C81-461E-B677-BB79366BBF08" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="j3R-pW-zEv">
                             <allowedToolbarItems>
@@ -692,37 +692,20 @@
                         </toolbar>
                     </window>
                     <connections>
-                        <segue destination="1wP-5X-3Wq" kind="relationship" relationship="window.shadowedContentViewController" id="Sqq-jC-55N"/>
+                        <segue destination="yM2-c6-EPm" kind="relationship" relationship="window.shadowedContentViewController" id="FB5-ZN-Yh7"/>
                     </connections>
                 </windowController>
                 <customObject id="qXW-HV-zYF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="262"/>
+            <point key="canvasLocation" x="648.5" y="340"/>
         </scene>
-        <!--Account View Controller-->
-        <scene sceneID="9kN-q6-CPX">
+        <!--View Controller-->
+        <scene sceneID="rGE-An-Epi">
             <objects>
-                <viewController id="1wP-5X-3Wq" customClass="AccountViewController" customModule="Twinico" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="537-Cb-cBn">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DhQ-5J-mgc">
-                                <rect key="frame" x="191" y="118" width="99" height="32"/>
-                                <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fph-J1-maN">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="authorizeButtonClicked:" target="1wP-5X-3Wq" id="VqS-dR-olA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                    </view>
-                </viewController>
-                <customObject id="9DL-4a-tKR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="yM2-c6-EPm" sceneMemberID="viewController"/>
+                <customObject id="2pl-Ei-iac" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="697"/>
+            <point key="canvasLocation" x="648" y="847"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">

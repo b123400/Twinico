@@ -9,24 +9,49 @@
 import Cocoa
 import Accounts
 import Social
-import QuartzCore
 
-class AccountViewController: NSViewController {
+class AccountViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+    @objc(AccountViewController)
+    
+    @IBOutlet var authView: NSView!
+    @IBOutlet var accountTableView: NSScrollView!
+    
+    let accountStore = ACAccountStore()
+    var accountType:ACAccountType?
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    func setup() {
+        accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        reloadViews()
+    }
+    
+    func reloadViews() {
+        
+        if accountType!.accessGranted {
+            self.view.addSubview(accountTableView)
+            authView.removeFromSuperview()
+        } else {
+            self.view.addSubview(authView)
+            accountTableView.removeFromSuperview()
+        }
     }
     
     @IBAction func authorizeButtonClicked(sender: AnyObject) {
-        let accountStore = ACAccountStore()
-        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         
-        if accountType.accessGranted {
-            
-        }
-
-        accountStore.requestAccessToAccountsWithType(accountType, options: nil) {
+        accountStore.requestAccessToAccountsWithType(accountType!, options: nil) {
             (granted, error) -> Void in
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -42,14 +67,26 @@ class AccountViewController: NSViewController {
                     return
                 }
                 
-                let account = accountStore.accountsWithAccountType(accountType)
-                if account.count == 0 {
-                    let alert = NSAlert()
-                    alert.messageText = "No Twitter account ar"
-                    alert.runModal()
-                }
-                NSLog(account.description)
+                self.reloadViews()
             })
         }
+    }
+    
+    func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
+        if !accountType!.accessGranted {
+            return 0
+        }
+        return accountStore.accountsWithAccountType(accountType).count
+    }
+    
+    func tableView(aTableView: NSTableView, objectValueForTableColumn aTableColumn: NSTableColumn?, row rowIndex: Int) -> AnyObject? {
+        
+        let allAccounts = accountStore.accountsWithAccountType(accountType!)
+        let thisAccount = allAccounts[rowIndex] as ACAccount
+        
+        if aTableColumn?.identifier == "Username" {
+            return thisAccount.username
+        }
+        return nil
     }
 }
